@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvQuestionCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 1 of 10"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:max="10"
+        android:progress="1"
+        android:progressTint="@color/purple_dark"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question text here"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/optionA"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="A. Option"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/option_background"/>
+
+        <RadioButton
+            android:id="@+id/optionB"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="B. Option"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/option_background"/>
+
+        <RadioButton
+            android:id="@+id/optionC"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="C. Option"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/option_background"/>
+
+        <RadioButton
+            android:id="@+id/optionD"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="D. Option"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/option_background"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="NEXT"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_dark"
+        android:textColor="@color/white"
+        android:enabled="false"/>
+
+</LinearLayout>
